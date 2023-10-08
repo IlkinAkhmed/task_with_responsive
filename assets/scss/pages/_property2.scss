@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    img {
+        width: 100%;
+    }
+}
+
+#property2 {
+    padding: 50px 0;
+    width: 100vw;
+    height: fit-content;
+
+    .cards {
+        width: 90%;
+        margin: auto;
+        .textrow {
+            width: 50%;
+            margin: auto;
+            line-height: 1.5;
+        }
+
+        .cardrow {
+            display: flex;
+            padding: 40px 0;
+            .card {
+                width: 25%;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                transition: 0.5s;
+                hr {
+                    width: 100%;
+                    color: gray;
+                }
+
+                .card-cap {
+                    width: 100%;
+
+                    .texts {
+                        margin: auto;
+                        padding: 25px 25px;
+                        line-height: 1.3;
+
+                        h3 {
+                            color: blue;
+                        }
+                    }
+                }
+
+                .details {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    margin: auto;
+                    align-items: center;
+                    padding: 25px 0;
+                    color: gray;
+                }
+            }
+            .card:hover{
+                transform: scale(1.05);
+                transition: 0.5s;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 678px) {
+    #property2{
+        .cards{
+            .cardrow{
+                flex-wrap: wrap;
+                .card{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 679px) and (max-width: 1399px){
+    #property2{
+        .cards{
+            .cardrow{
+                flex-wrap: wrap;
+                .card{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400px){
+    #property2{
+        .cards{
+            .cardrow{
+                flex-wrap: wrap;
+                .card{
+                    width: 25%;
+                }
+            }
+        }
+    }
+}

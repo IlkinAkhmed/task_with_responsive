@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    width: 100vw;
+
+    .navinside {
+        width: 60%;
+        margin: auto;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+
+        .search {
+            display: flex;
+            align-items: center;
+            border: 1px solid gray;
+            border-radius: 8px;
+            width: 50%;
+            padding: 0 6px;
+            i {
+                font-size: 20px;
+                color: gray;
+                padding: 0 10px;
+            }
+
+            input {
+                border: none;
+                height: 50px;
+                width: 100%;
+                color: gray;
+            }
+        }
+
+        .rent {
+            width: 20%;
+            padding: 17px 33px;
+            border: 1px solid gray;
+            border-radius: 8px;
+            position: relative;
+            a{
+                color: black;
+            }
+
+            .submenu-one {
+                position: absolute;
+                display: flex;
+                width: 140px;
+                border-radius: 8px;
+                right: -39px;
+                top: 51px;
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: white;
+
+                a {
+                    color: black;
+                    padding: 0 15px;
+                    line-height: 2;
+                }
+            }
+        }
+        .rent:hover .submenu-one{
+            display: block;
+        }
+
+
+
+        .bed-and-bath {
+            width: 20%;
+            border: 1px solid gray;
+            border-radius: 8px;
+            padding: 15px 10px;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            i {
+                font-size: 20px;
+                color: gray;
+            }
+
+            a {
+                color: black;
+                padding: 10px 15px;
+            }
+            .submenu-two {
+                position: absolute;
+                display: flex;
+                width: 131px;
+                border-radius: 8px;
+                right: -39px;
+                top: 51px;
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: white;
+
+                a {
+                    color: black;
+                    padding: 0 15px;
+                    line-height: 2;
+                }
+            }
+        }
+        .bed-and-bath:hover .submenu-two{
+            display: block;
+        }
+
+        .search-button {
+            color: white;
+            border: 1px solid;
+            padding: 18px 25px;
+            background-color: #004274;
+            border-radius: 8px;
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+    nav{
+        .navinside{
+            flex-wrap: wrap;
+            .search{
+                width: 100%;
+            }
+            .rent{
+            width: 100%;
+            }
+            .bed-and-bath{
+                width: 100%;
+            }
+            .search-button{
+                width: 100%;
+            }
+        }
+    }
+    
+}
+@media screen and (min-width: 769px) and (max-width: 992px){
+    nav{
+        .navinside{
+            flex-wrap: wrap;
+            .search{
+                width: 100%;
+            }
+            .rent{
+            width: 35%;
+            }
+            .bed-and-bath{
+                width: 35%;
+            }
+            .search-button{
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1124px){
+    nav{
+        .navinside{
+            flex-wrap: wrap;
+            .search{
+                width: 20%;
+            }
+            .rent{
+            width: 20%;
+            }
+            .bed-and-bath{
+                width: 20%;
+            }
+            .search-button{
+                width: 20%;
+            }
+        }
+    }
+    
+}
+@media screen and (min-width: 1125px){
+    nav{
+        .navinside{
+            flex-wrap: wrap;
+            .search{
+                width: 40%;
+            }
+            .rent{
+            width: 10%;
+            }
+            .bed-and-bath{
+                width: 10%;
+            }
+            .search-button{
+                width: 10%;
+            }
+        }
+    }
+    
+}
+

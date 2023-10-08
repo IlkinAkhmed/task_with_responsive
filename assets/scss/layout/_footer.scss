@@ -1,0 +1,93 @@
+footer {
+    width: 100vw;
+
+    .footer-cards {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        padding: 100px 0;
+
+        .box {
+            width: 20%;
+            list-style-type: none;
+            line-height: 1.8;
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgb(225, 225, 225);
+
+            img {
+                width: 200px;
+            }
+
+            a {
+                color: black;
+            }
+
+            a:hover {
+                text-decoration: dashed;
+            }
+
+            .icons {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                font-size: 25px;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 576px) {
+    footer {
+        .footer-cards {
+            flex-wrap: wrap;
+            .box {
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    footer {
+        .footer-cards {
+            flex-wrap: wrap;
+            justify-content: center;
+            .box {
+                width: 50%;
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    footer {
+        .footer-cards {
+            flex-wrap: wrap;
+            justify-content: center;
+            .box {
+                width: 33%;
+            }
+        }
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1124px) {
+    footer {
+        .footer-cards {
+            flex-wrap: wrap;
+            justify-content: center;
+            .box {
+                width: 25%;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1125px) {
+    footer {
+        .footer-cards {
+            flex-wrap: wrap;
+            .box {
+                width: 20%;
+            }
+        }
+    }
+
+}

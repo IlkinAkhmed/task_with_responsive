@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#Blog{
+    width: 100vw;
+    height: fit-content;
+    background-color: rgb(225, 225, 225);
+    .texts-and-cards{
+        display: flex;
+        width: 90%;
+        height: fit-content;
+        padding: 80px 0;
+        margin: auto;
+        .texts{
+            width: 30%;
+            line-height: 1.2;
+            p{
+                padding: 20px 0;
+            }
+            a{
+                color: white;
+                padding: 15px 25px;
+                background-color: #00AEFF;
+                border-radius: 8px;
+            }
+        }
+        .cardrow{
+            display: flex;
+            height: fit-content;
+            align-items: center;
+            width: 70%;
+            background-color: rgb(225, 225, 225);
+            .cards{
+                width: 25%;
+                height: 226px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                transition: 0.5s;
+                img{
+                    width: 80px;
+                    height: 80px;
+                    padding-bottom: 15px;
+                }
+                a{
+                    color: black;
+                    transition: 0.5s;
+                }
+            }
+            .cards:hover{
+                background-color: rgb(225, 225, 225);
+                transition: 0.5s;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            }
+            .cards:hover a{
+                color: #00AEFF;
+                text-decoration: solid;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #Blog{
+        .texts-and-cards{
+            flex-wrap: wrap;
+            .texts{
+                width: 100%;
+            }
+            .cardrow{
+                width: 100%;
+                margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+                .cards{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 730px) {
+    #Blog{
+        .texts-and-cards{
+            flex-wrap: wrap;
+            .texts{
+                width: 100%;
+            }
+            .cardrow{
+                width: 100%;
+                margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+                .cards{
+                    width: 33.3%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 731px) and (max-width: 967px) {
+    #Blog{
+        .texts-and-cards{
+            flex-wrap: wrap;
+            .texts{
+                width: 100%;
+            }
+            .cardrow{
+                width: 100%;
+                margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+                .cards{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 968px) and (max-width: 1169px) {
+    #Blog{
+        .texts-and-cards{
+            flex-wrap: wrap;
+            .texts{
+                width: 100%;
+            }
+            .cardrow{
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1170px) {
+    #Blog{
+        .texts-and-cards{
+            flex-wrap: wrap;
+            .texts{
+                width: 30%;
+            }
+            .cardrow{
+                width: 70%;
+            }
+        }
+    }
+}

@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+#agents {
+    width: 100%;
+    height: fit-content;
+
+    .boxes-and-texts {
+        width: 90%;
+        margin: auto;
+        padding: 50px 0;
+
+        .texts {
+            width: 30%;
+            margin: auto;
+            text-align: center;
+            padding: 50px 0;
+
+            p {
+                color: gray;
+            }
+        }
+
+        .boxes {
+            width: 100%;
+            display: flex;
+
+            .box {
+                width: 25%;
+                text-align: center;
+
+                .image {
+                    position: relative;
+                    transition: 0.5s;
+
+                    i {
+                        position: absolute;
+                        bottom: -16%;
+                        font-size: 20px;
+                        color: white;
+                        padding: 15px;
+                        background-color: #004274;
+                        z-index: 1;
+                        border-radius: 100%;
+                        transition: 0.5s;
+                        opacity: 0;
+                    }
+
+                    i:hover {
+                        background-color: #002f54;
+                        transition: 0.3s;
+                    }
+
+                    .fa-facebook {
+                        left: 20%;
+                    }
+
+                    .fa-twitter {
+                        left: 40%;
+                        transition-delay: 0.1s;
+                    }
+
+                    .fa-globe {
+                        left: 60%;
+                        transition-delay: 0.2s;
+                    }
+                }
+
+                .boxtext {
+                    height: 80px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    p {
+                        font-family: "Jost", sans-serif;
+                        color: gray;
+                        font-size: 15px;
+                    }
+
+                    a {
+                        color: black;
+                        font-family: "Jost", sans-serif;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .box:hover .fa-facebook {
+                transform: translateY(-100px);
+                transition: 0.5s;
+                opacity: 1;
+            }
+
+            .box:hover .fa-twitter {
+                transform: translateY(-100px);
+                transition: 0.5s;
+                transition-delay: 0.1s;
+                opacity: 1;
+            }
+
+            .box:hover .fa-globe {
+                transform: translateY(-100px);
+                transition: 0.5s;
+                transition-delay: 0.2s;
+                opacity: 1;
+            }
+
+            .box:hover img {
+                filter: brightness(50%);
+                transition: 0.5s;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    #agents {
+        .boxes-and-texts {
+            .boxes {
+                flex-wrap: wrap;
+
+                .box {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    #agents {
+        .boxes-and-texts {
+            .boxes {
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .box {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    #agents {
+        .boxes-and-texts {
+            .boxes {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .box {
+                    width: 33%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1124px) {
+    #agents {
+        .boxes-and-texts {
+            .boxes {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .box {
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1125px) {
+    #agents {
+        .boxes-and-texts {
+            .boxes {
+                flex-wrap: wrap;
+
+                .box {
+                    width: 20%;
+                }
+            }
+        }
+    }
+
+}
